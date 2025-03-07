@@ -270,6 +270,172 @@ body {
     50% { opacity: 0.7; }
 }
 
+.cyber-button {
+    position: relative;
+    overflow: hidden;
+}
+
+.cyber-button::before,
+.cyber-button::after {
+    content: '';
+    position: absolute;
+    background: #00ff00;
+    opacity: 0.3;
+    transition: all 0.3s ease;
+}
+
+.cyber-button::before {
+    width: 100%;
+    height: 1px;
+    top: 0;
+    left: -100%;
+}
+
+.cyber-button::after {
+    width: 1px;
+    height: 100%;
+    top: -100%;
+    right: 0;
+}
+
+.cyber-button:hover::before {
+    left: 0;
+    box-shadow: 0 0 10px #00ff00;
+}
+
+.cyber-button:hover::after {
+    top: 0;
+    box-shadow: 0 0 10px #00ff00;
+}
+
+.cyber-button:hover .cyber-button-border {
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+}
+
+@keyframes glitch {
+    0% { transform: translate(0); }
+    20% { transform: translate(-2px, 2px); }
+    40% { transform: translate(-2px, -2px); }
+    60% { transform: translate(2px, 2px); }
+    80% { transform: translate(2px, -2px); }
+    100% { transform: translate(0); }
+}
+
+.cyber-button:hover .cyber-button-glitch {
+    animation: glitch 0.3s cubic-bezier(.25, .46, .45, .94) both infinite;
+}
+
+.blog-card {
+    transition: all 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.1);
+}
+
+.blog-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 0;
+    background: #00ff00;
+    transition: height 0.3s ease;
+}
+
+.blog-card:hover::before {
+    height: 100%;
+}
+
+.cyber-grid {
+    background-image: linear-gradient(rgba(0, 255, 0, 0.1) 1px, transparent 1px),
+                      linear-gradient(90deg, rgba(0, 255, 0, 0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+}
+
+.form-group {
+    position: relative;
+    overflow: hidden;
+}
+
+.form-group::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #00ff00, transparent);
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
+.form-group:focus-within::after {
+    transform: translateX(0);
+}
+
+input, textarea {
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+}
+
+input:focus, textarea:focus {
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.1);
+}
+
+/* Glowing cursor effect for inputs */
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+input::placeholder, textarea::placeholder {
+    color: rgba(0, 255, 0, 0.3);
+}
+
+/* Custom scrollbar for textarea */
+textarea::-webkit-scrollbar {
+    width: 8px;
+}
+
+textarea::-webkit-scrollbar-track {
+    background: rgba(0, 255, 0, 0.1);
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background: rgba(0, 255, 0, 0.3);
+    border-radius: 4px;
+}
+
+textarea::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 255, 0, 0.5);
+}
+
+.project-card {
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.1);
+}
+
+.tech-tag {
+    transition: all 0.3s ease;
+}
+
+.tech-tag:hover {
+    background-color: rgba(0, 255, 0, 0.2);
+    border-color: rgba(0, 255, 0, 0.4);
+}
+
+.project-link:hover svg {
+    transform: translateX(4px);
+    transition: transform 0.2s ease;
+}
+
 /* Add this to your existing animations */
 .skill-level[data-level="95"] .level-bar { --level: 95%; }
 .skill-level[data-level="90"] .level-bar { --level: 90%; }

@@ -1,196 +1,481 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Vinayak Rastogi - Backend Developer Portfolio">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Vinayak Rastogi - Backend Developer Portfolio"
+    />
     <title>Vinayak Rastogi | Backend Developer</title>
-    
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- GSAP for animations -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body class="bg-black text-green-400">
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="bg-black text-green-400">
     <!-- Add a background pattern overlay -->
-    <div class="fixed inset-0 bg-grid-pattern opacity-10 pointer-events-none"></div>
+    <div
+      class="fixed inset-0 bg-grid-pattern opacity-10 pointer-events-none"
+    ></div>
 
     <!-- Update hero section -->
-    <section id="hero" class="min-h-screen flex items-center justify-center px-4 relative overflow-hidden">
-        <div class="glitch-effect absolute inset-0 border border-green-500/20"></div>
-        <div class="container mx-auto text-center relative">
-            <div class="glitch-container mb-4">
-                <h1 class="text-5xl md:text-7xl font-mono font-bold mb-4 glitch-text" data-text="Vinayak Rastogi">
-                    Vinayak Rastogi
-                </h1>
-            </div>
-            <p class="text-xl md:text-2xl text-green-500 mb-8 font-mono typing-animation">
-                Backend Developer | Security Enthusiast | Code Breaker
-            </p>
-            <div class="flex justify-center space-x-6">
-                <a href="https://github.com/yourusername" class="cyber-button">
-                    <i class="fab fa-github text-2xl"></i>
-                </a>
-                <a href="https://linkedin.com/in/yourusername" class="cyber-button">
-                    <i class="fab fa-linkedin text-2xl"></i>
-                </a>
-                <a href="/resume.pdf" class="cyber-button">
-                    <i class="fas fa-file-alt text-2xl"></i>
-                </a>
-            </div>
+    <section
+      id="hero"
+      class="min-h-screen flex items-center justify-center px-4 relative overflow-hidden"
+    >
+      <div
+        class="glitch-effect absolute inset-0 border border-green-500/20"
+      ></div>
+      <div class="container mx-auto text-center relative">
+        <div class="glitch-container mb-4">
+          <h1
+            class="text-5xl md:text-7xl font-mono font-bold mb-4 glitch-text"
+            data-text="Vinayak Rastogi"
+          >
+            Vinayak Rastogi
+          </h1>
         </div>
+        <p
+          class="text-lg md:text-xl lg:text-2xl text-green-500 mb-8 font-mono typing-animation whitespace-normal px-4"
+        >
+          Backend Developer <span class="hidden xs:inline">|</span
+          ><br class="xs:hidden" />
+          Security Enthusiast <span class="hidden xs:inline">|</span
+          ><br class="xs:hidden" />
+          Code Breaker
+        </p>
+
+        <div class="flex justify-center space-x-4 md:space-x-6 mt-8">
+          <a
+            href="https://github.com/VinVorteX"
+            class="cyber-button group relative"
+            target="next"
+          >
+            <div
+              class="cyber-button-border absolute inset-0 border border-green-500/50"
+            ></div>
+            <div
+              class="flex items-center space-x-2 px-4 py-2 bg-black hover:bg-green-500/10 transition-all duration-300 relative"
+            >
+              <svg
+                class="w-5 h-5 md:w-6 md:h-6"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                />
+              </svg>
+              <span class="text-sm md:text-base font-mono tracking-wider"
+                >GITHUB</span
+              >
+              <div
+                class="cyber-button-glitch absolute inset-0 bg-green-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-200"
+              ></div>
+            </div>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/vinayakrastogi3010/"
+            class="cyber-button group relative"
+            target="next"
+          >
+            <div
+              class="cyber-button-border absolute inset-0 border border-green-500/50"
+            ></div>
+            <div
+              class="flex items-center space-x-2 px-4 py-2 bg-black hover:bg-green-500/10 transition-all duration-300 relative"
+            >
+              <svg
+                class="w-5 h-5 md:w-6 md:h-6"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"
+                />
+              </svg>
+              <span class="text-sm md:text-base font-mono tracking-wider"
+                >LINKEDIN</span
+              >
+              <div
+                class="cyber-button-glitch absolute inset-0 bg-green-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-200"
+              ></div>
+            </div>
+          </a>
+
+          <a
+            href="https://drive.google.com/file/d/1zGD3CzBDBTkDCh3eAyg7nIOUoGy0JySZ/view"
+            class="cyber-button group relative"
+            target="next"
+          >
+            <div
+              class="cyber-button-border absolute inset-0 border border-green-500/50"
+            ></div>
+            <div
+              class="flex items-center space-x-2 px-4 py-2 bg-black hover:bg-green-500/10 transition-all duration-300 relative"
+            >
+              <svg
+                class="w-5 h-5 md:w-6 md:h-6"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+                />
+                <polyline points="14 2 14 8 20 8" />
+                <line x1="16" y1="13" x2="8" y2="13" />
+                <line x1="16" y1="17" x2="8" y2="17" />
+                <line x1="10" y1="9" x2="8" y2="9" />
+              </svg>
+              <span class="text-sm md:text-base font-mono tracking-wider"
+                >RESUME</span
+              >
+              <div
+                class="cyber-button-glitch absolute inset-0 bg-green-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-200"
+              ></div>
+            </div>
+          </a>
+        </div>
+      </div>
     </section>
 
     <!-- Update skills section -->
     <section id="skills" class="py-20 px-4 bg-black/80 relative">
-        <div class="cyber-grid absolute inset-0 opacity-5"></div>
-        <div class="container mx-auto relative">
-            <h2 class="text-3xl md:text-4xl font-mono font-bold mb-12 text-center glitch-text" data-text="Skills & Expertise">
-                Skills & Expertise
-            </h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Golang Card -->
-                <div class="cyber-skill-card">
-                    <div class="skill-header">
-                        <div class="skill-icon">
-                            <i class="fab fa-golang text-4xl"></i>
-                        </div>
-                        <div class="skill-level" data-level="95">
-                            <div class="level-bar"></div>
-                        </div>
-                    </div>
-                    <h3 class="text-xl font-mono mb-2">Golang</h3>
-                    <ul class="skill-details space-y-2 text-sm">
-                        <li><span class="text-accent">→</span> Concurrent Programming</li>
-                        <li><span class="text-accent">→</span> Microservices</li>
-                        <li><span class="text-accent">→</span> System Design</li>
-                    </ul>
-                    <div class="cyber-corners"></div>
-                </div>
-
-                <!-- Python Card -->
-                <div class="cyber-skill-card">
-                    <div class="skill-header">
-                        <div class="skill-icon">
-                            <i class="fab fa-python text-4xl"></i>
-                        </div>
-                        <div class="skill-level" data-level="90">
-                            <div class="level-bar"></div>
-                        </div>
-                    </div>
-                    <h3 class="text-xl font-mono mb-2">Python</h3>
-                    <ul class="skill-details space-y-2 text-sm">
-                        <li><span class="text-accent">→</span> Django/FastAPI</li>
-                        <li><span class="text-accent">→</span> Data Analysis</li>
-                        <li><span class="text-accent">→</span> Automation</li>
-                    </ul>
-                    <div class="cyber-corners"></div>
-                </div>
-
-                <!-- Backend Card -->
-                <div class="cyber-skill-card">
-                    <div class="skill-header">
-                        <div class="skill-icon">
-                            <i class="fas fa-server text-4xl"></i>
-                        </div>
-                        <div class="skill-level" data-level="85">
-                            <div class="level-bar"></div>
-                        </div>
-                    </div>
-                    <h3 class="text-xl font-mono mb-2">Backend</h3>
-                    <ul class="skill-details space-y-2 text-sm">
-                        <li><span class="text-accent">→</span> System Architecture</li>
-                        <li><span class="text-accent">→</span> API Design</li>
-                        <li><span class="text-accent">→</span> Database Design</li>
-                    </ul>
-                    <div class="cyber-corners"></div>
-                </div>
+      <div class="cyber-grid absolute inset-0 opacity-5"></div>
+      <div class="container mx-auto relative">
+        <h2
+          class="text-3xl md:text-4xl font-mono font-bold mb-12 text-center glitch-text"
+          data-text="Skills & Expertise"
+        >
+          Skills & Expertise
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Golang Card -->
+          <div class="cyber-skill-card">
+            <div class="skill-header">
+              <div class="skill-icon">
+                <i class="fab fa-golang text-4xl"></i>
+              </div>
+              <div class="skill-level" data-level="95">
+                <div class="level-bar"></div>
+              </div>
             </div>
+            <h3 class="text-xl font-mono mb-2">Golang</h3>
+            <ul class="skill-details space-y-2 text-sm">
+              <li><span class="text-accent">→</span> Concurrent Programming</li>
+              <li><span class="text-accent">→</span> Microservices</li>
+              <li><span class="text-accent">→</span> System Design</li>
+            </ul>
+            <div class="cyber-corners"></div>
+          </div>
+
+          <!-- Python Card -->
+          <div class="cyber-skill-card">
+            <div class="skill-header">
+              <div class="skill-icon">
+                <i class="fab fa-python text-4xl"></i>
+              </div>
+              <div class="skill-level" data-level="90">
+                <div class="level-bar"></div>
+              </div>
+            </div>
+            <h3 class="text-xl font-mono mb-2">Python</h3>
+            <ul class="skill-details space-y-2 text-sm">
+              <li><span class="text-accent">→</span> Django/FastAPI</li>
+              <li><span class="text-accent">→</span> Data Analysis</li>
+              <li><span class="text-accent">→</span> Automation</li>
+            </ul>
+            <div class="cyber-corners"></div>
+          </div>
+
+          <!-- Backend Card -->
+          <div class="cyber-skill-card">
+            <div class="skill-header">
+              <div class="skill-icon">
+                <i class="fas fa-server text-4xl"></i>
+              </div>
+              <div class="skill-level" data-level="85">
+                <div class="level-bar"></div>
+              </div>
+            </div>
+            <h3 class="text-xl font-mono mb-2">Backend</h3>
+            <ul class="skill-details space-y-2 text-sm">
+              <li><span class="text-accent">→</span> System Architecture</li>
+              <li><span class="text-accent">→</span> API Design</li>
+              <li><span class="text-accent">→</span> Database Design</li>
+            </ul>
+            <div class="cyber-corners"></div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="py-20 px-4 bg-gray-800">
-        <div class="container mx-auto">
-            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">Featured Projects</h2>
+    <section id="projects" class="py-20 px-4 bg-black/80 relative">
+        <div class="cyber-grid absolute inset-0 opacity-5"></div>
+        <div class="container mx-auto relative">
+            <h2 class="text-3xl md:text-4xl font-mono font-bold mb-12 text-center glitch-text" data-text="Featured Projects">
+                Featured Projects
+            </h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Project Card 1 -->
-                <div class="project-card">
-                    <h3 class="text-xl font-bold mb-2">Reddit Clone</h3>
-                    <p class="text-gray-400 mb-4">A full-featured Reddit clone built with Django and PostgreSQL</p>
-                    <div class="tech-stack mb-4">
-                        <span class="tech-tag">Django</span>
-                        <span class="tech-tag">PostgreSQL</span>
-                        <span class="tech-tag">Redis</span>
+                <div class="project-card group relative p-6 bg-black/60 backdrop-blur">
+                    <div class="absolute inset-0 border border-green-500/20 pointer-events-none"></div>
+                    <div class="relative z-10">
+                        <span class="text-green-500/60 text-sm font-mono mb-2 block">01 // EMERGENCY_RESPONSE</span>
+                        <h3 class="text-xl font-mono font-bold mb-3 group-hover:text-green-400 transition-colors">S-E-R-S</h3>
+                        <p class="text-gray-400 mb-4 text-sm">
+                            A smart emergency response system enabling one-tap SOS, AI health monitoring, and real-time hospital and responder coordination.
+                        </p>
+                        <div class="tech-stack mb-4 flex flex-wrap gap-2">
+                            <span class="tech-tag px-2 py-1 bg-green-500/10 border border-green-500/20 text-green-400 text-xs font-mono">Golang</span>
+                            <span class="tech-tag px-2 py-1 bg-green-500/10 border border-green-500/20 text-green-400 text-xs font-mono">PostgreSQL</span>
+                            <span class="tech-tag px-2 py-1 bg-green-500/10 border border-green-500/20 text-green-400 text-xs font-mono">Docker</span>
+                            <span class="tech-tag px-2 py-1 bg-green-500/10 border border-green-500/20 text-green-400 text-xs font-mono">React-Native</span>
+                        </div>
+                        <a href="https://github.com/VinVorteX/sers" class="project-link inline-flex items-center space-x-2 text-green-400 hover:text-green-300 transition-colors font-mono text-sm" target="_blank">
+                            <span>VIEW_SOURCE</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                            </svg>
+                        </a>
                     </div>
-                    <a href="#" class="project-link">View on GitHub →</a>
+                    <div class="absolute inset-0 border border-green-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
                 </div>
-                <!-- Add more project cards -->
-                <div class="project-card">
-                    <h3 class="text-xl font-bold mb-2">Reddit Clone</h3>
-                    <p class="text-gray-400 mb-4">A full-featured Reddit clone built with Django and PostgreSQL</p>
-                    <div class="tech-stack mb-4">
-                        <span class="tech-tag">Django</span>
-                        <span class="tech-tag">PostgreSQL</span>
-                        <span class="tech-tag">Redis</span>
+    
+                <!-- Project Card 2 -->
+                <div class="project-card group relative p-6 bg-black/60 backdrop-blur">
+                    <div class="absolute inset-0 border border-green-500/20 pointer-events-none"></div>
+                    <div class="relative z-10">
+                        <span class="text-green-500/60 text-sm font-mono mb-2 block">02 // CONTRACT_MANAGEMENT</span>
+                        <h3 class="text-xl font-mono font-bold mb-3 group-hover:text-green-400 transition-colors">C-C-M-S</h3>
+                        <p class="text-gray-400 mb-4 text-sm">
+                            CCMS is a Python-based system for managing contracts and compliance, streamlining workflows, ensuring efficiency, and improving contractual obligation management.
+                        </p>
+                        <div class="tech-stack mb-4 flex flex-wrap gap-2">
+                            <span class="tech-tag px-2 py-1 bg-green-500/10 border border-green-500/20 text-green-400 text-xs font-mono">Python</span>
+                            <span class="tech-tag px-2 py-1 bg-green-500/10 border border-green-500/20 text-green-400 text-xs font-mono">PostgreSQL</span>
+                        </div>
+                        <a href="https://github.com/VinVorteX/ccms" class="project-link inline-flex items-center space-x-2 text-green-400 hover:text-green-300 transition-colors font-mono text-sm" target="_blank">
+                            <span>VIEW_SOURCE</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                            </svg>
+                        </a>
                     </div>
-                    <a href="#" class="project-link">View on GitHub →</a>
+                    <div class="absolute inset-0 border border-green-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
                 </div>
-                <div class="project-card">
-                    <h3 class="text-xl font-bold mb-2">Reddit Clone</h3>
-                    <p class="text-gray-400 mb-4">A full-featured Reddit clone built with Django and PostgreSQL</p>
-                    <div class="tech-stack mb-4">
-                        <span class="tech-tag">Django</span>
-                        <span class="tech-tag">PostgreSQL</span>
-                        <span class="tech-tag">Redis</span>
+    
+                <!-- Project Card 3 -->
+                <div class="project-card group relative p-6 bg-black/60 backdrop-blur">
+                    <div class="absolute inset-0 border border-green-500/20 pointer-events-none"></div>
+                    <div class="relative z-10">
+                        <span class="text-green-500/60 text-sm font-mono mb-2 block">03 // SENTIMENT_ANALYSIS</span>
+                        <h3 class="text-xl font-mono font-bold mb-3 group-hover:text-green-400 transition-colors">SENTYSIS</h3>
+                        <p class="text-gray-400 mb-4 text-sm">
+                            This Python CLI tool analyzes sentiment in a CSV's text data. It identifies positive, negative, or neutral tones and allows for custom stop word filtering.
+                        </p>
+                        <div class="tech-stack mb-4 flex flex-wrap gap-2">
+                            <span class="tech-tag px-2 py-1 bg-green-500/10 border border-green-500/20 text-green-400 text-xs font-mono">Python</span>
+                        </div>
+                        <a href="https://github.com/VinVorteX/sentysis" class="project-link inline-flex items-center space-x-2 text-green-400 hover:text-green-300 transition-colors font-mono text-sm" target="_blank">
+                            <span>VIEW_SOURCE</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                            </svg>
+                        </a>
                     </div>
-                    <a href="#" class="project-link">View on GitHub →</a>
+                    <div class="absolute inset-0 border border-green-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Blog Section -->
-    <section id="blog" class="py-20 px-4">
-        <div class="container mx-auto">
-            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">Latest Articles</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- Blog Card 1 -->
-                <div class="blog-card">
-                    <h3 class="text-xl font-bold mb-2">Understanding Concurrency in Go</h3>
-                    <p class="text-gray-400 mb-4">Exploring goroutines, channels, and best practices...</p>
-                    <a href="#" class="blog-link">Read More →</a>
-                </div>
-                <!-- Add more blog cards -->
+
+    <section id="blog" class="py-20 px-4 bg-black/80 relative">
+      <div class="cyber-grid absolute inset-0 opacity-5"></div>
+      <div class="container mx-auto relative">
+        <h2
+          class="text-3xl md:text-4xl font-mono font-bold mb-12 text-center glitch-text"
+          data-text="Latest Articles"
+        >
+          Latest Articles
+        </h2>
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8 max-w-5xl mx-auto"
+        >
+          <!-- Blog Card 1 -->
+          <div class="blog-card group relative p-6 bg-black/60 backdrop-blur">
+            <div
+              class="absolute inset-0 border border-green-500/20 pointer-events-none"
+            ></div>
+            <div class="relative z-10">
+              <span class="text-green-500/60 text-sm font-mono mb-2 block"
+                >01 // GOLANG</span
+              >
+              <h3
+                class="text-lg sm:text-xl font-bold mb-3 font-mono group-hover:text-green-400 transition-colors"
+              >
+                Understanding Concurrency in Go
+              </h3>
+              <p class="text-gray-400 mb-4 text-sm sm:text-base">
+                Exploring goroutines, channels, and best practices for building
+                efficient concurrent systems...
+              </p>
+              <a
+                href="#"
+                class="inline-flex items-center space-x-2 text-green-400 hover:text-green-300 transition-colors font-mono text-sm"
+              >
+                <span>READ_MORE</span>
+                <svg
+                  class="w-4 h-4"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                  />
+                </svg>
+              </a>
             </div>
+            <div
+              class="absolute inset-0 border border-green-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
+            ></div>
+          </div>
+
+          <!-- Blog Card 2 -->
+          <div class="blog-card group relative p-6 bg-black/60 backdrop-blur">
+            <div
+              class="absolute inset-0 border border-green-500/20 pointer-events-none"
+            ></div>
+            <div class="relative z-10">
+              <span class="text-green-500/60 text-sm font-mono mb-2 block"
+                >02 // SECURITY</span
+              >
+              <h3
+                class="text-lg sm:text-xl font-bold mb-3 font-mono group-hover:text-green-400 transition-colors"
+              >
+                Ethical Hacking Fundamentals
+              </h3>
+              <p class="text-gray-400 mb-4 text-sm sm:text-base">
+                Deep dive into penetration testing methodologies and security
+                best practices...
+              </p>
+              <a
+                href="#"
+                class="inline-flex items-center space-x-2 text-green-400 hover:text-green-300 transition-colors font-mono text-sm"
+              >
+                <span>READ_MORE</span>
+                <svg
+                  class="w-4 h-4"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div
+              class="absolute inset-0 border border-green-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
+            ></div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-20 px-4 bg-gray-800">
-        <div class="container mx-auto max-w-2xl">
-            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">Get in Touch</h2>
-            <form id="contact-form" class="space-y-6">
-                <div>
-                    <label for="name" class="block text-sm font-medium mb-2">Name</label>
-                    <input type="text" id="name" name="name" required
-                           class="form-input w-full bg-gray-700 border-gray-600 text-white">
+    <section id="contact" class="py-20 px-4 bg-black/80 relative">
+        <div class="cyber-grid absolute inset-0 opacity-5"></div>
+        <div class="container mx-auto max-w-2xl relative">
+            <h2 class="text-3xl md:text-4xl font-mono font-bold mb-12 text-center glitch-text" data-text="Get in Touch">
+                Get in Touch
+            </h2>
+            
+            <form id="contact-form" class="space-y-6 p-6 relative">
+                <!-- Decorative corner elements -->
+                <div class="absolute top-0 left-0 w-4 h-4 border-l-2 border-t-2 border-green-500/50"></div>
+                <div class="absolute top-0 right-0 w-4 h-4 border-r-2 border-t-2 border-green-500/50"></div>
+                <div class="absolute bottom-0 left-0 w-4 h-4 border-l-2 border-b-2 border-green-500/50"></div>
+                <div class="absolute bottom-0 right-0 w-4 h-4 border-r-2 border-b-2 border-green-500/50"></div>
+                
+                <!-- Name Input -->
+                <div class="form-group relative">
+                    <label for="name" class="block text-sm font-mono text-green-400 mb-2">
+                        > USER_NAME:
+                    </label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        required
+                        class="w-full bg-black/60 border border-green-500/50 text-green-400 px-4 py-2 font-mono focus:outline-none focus:border-green-400 focus:ring-1 focus:ring-green-400 transition-all duration-300 placeholder-green-700"
+                        placeholder="Enter your name"
+                    />
                 </div>
-                <div>
-                    <label for="email" class="block text-sm font-medium mb-2">Email</label>
-                    <input type="email" id="email" name="email" required
-                           class="form-input w-full bg-gray-700 border-gray-600 text-white">
+    
+                <!-- Email Input -->
+                <div class="form-group relative">
+                    <label for="email" class="block text-sm font-mono text-green-400 mb-2">
+                        > EMAIL_ADDRESS:
+                    </label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                        class="w-full bg-black/60 border border-green-500/50 text-green-400 px-4 py-2 font-mono focus:outline-none focus:border-green-400 focus:ring-1 focus:ring-green-400 transition-all duration-300 placeholder-green-700"
+                        placeholder="Enter your email"
+                    />
                 </div>
-                <div>
-                    <label for="message" class="block text-sm font-medium mb-2">Message</label>
-                    <textarea id="message" name="message" rows="4" required
-                            class="form-textarea w-full bg-gray-700 border-gray-600 text-white"></textarea>
+    
+                <!-- Message Input -->
+                <div class="form-group relative">
+                    <label for="message" class="block text-sm font-mono text-green-400 mb-2">
+                        > MESSAGE:
+                    </label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="4"
+                        required
+                        class="w-full bg-black/60 border border-green-500/50 text-green-400 px-4 py-2 font-mono focus:outline-none focus:border-green-400 focus:ring-1 focus:ring-green-400 transition-all duration-300 placeholder-green-700 resize-none"
+                        placeholder="Type your message here..."
+                    ></textarea>
                 </div>
-                <button type="submit" 
-                        class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300">
-                    Send Message
+    
+                <!-- Submit Button -->
+                <button
+                    type="submit"
+                    class="w-full cyber-button group relative overflow-hidden"
+                >
+                    <div class="cyber-button-border absolute inset-0 border border-green-500/50"></div>
+                    <div class="flex items-center justify-center space-x-2 px-6 py-3 bg-black hover:bg-green-500/10 transition-all duration-300 relative">
+                        <span class="text-sm md:text-base font-mono tracking-wider text-green-400">TRANSMIT_MESSAGE</span>
+                        <svg class="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                        </svg>
+                        <div class="cyber-button-glitch absolute inset-0 bg-green-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-200"></div>
+                    </div>
                 </button>
             </form>
         </div>
@@ -201,5 +486,5 @@
     <!-- Custom JS -->
     <script src="js/animations.js"></script>
     <script src="js/main.js"></script>
-</body>
-</html> 
+  </body>
+</html>

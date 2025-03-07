@@ -1,5 +1,14 @@
 // Initialize GSAP animations
 document.addEventListener('DOMContentLoaded', () => {
+    // module.exports = {
+    //     theme: {
+    //       screens: {
+    //         'xs': '475px',
+    //         // ... other breakpoints
+    //       }
+    //     }
+    //   }
+
     // Add scanlines
     const scanlines = document.createElement('div');
     scanlines.className = 'scanlines';
